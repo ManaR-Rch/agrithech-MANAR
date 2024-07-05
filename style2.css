@@ -1,0 +1,153 @@
+body {
+    font-family: 'Kadwa', serif;
+}
+
+* {
+    /*all element*/
+    text-decoration: none;
+    /*Removes underlines from text links */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #155032;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #155032;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 7px;
+    box-sizing: border-box;
+    border-top: 0px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #155032;
+    border-radius: 3px;
+}
+
+label #btn {
+    top: 150px;
+    left: 30px;
+    font-size: 35px;
+    color: white;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: 65px;
+    top: 1px;
+    font-size: 20px;
+    color: white;
+    padding: 4px 9px;
+}
+
+.fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #155032;
+    z-index: -1;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+img {
+    margin-top: -9px;
+    width: 660px;
+    margin-left: 92px;
+    margin-right: auto;
+    border-radius: 0 90px 90px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -66px;
+  }
+.para1{
+    padding: 7px;
+    font-size: 20px;
+    color: #155032;
+    letter-spacing: 10px;
+    margin-top: 10px;
+
+}
+
+
+.titre-droite {
+    padding: 7px;
+    font-size: 52px;
+    color: #155032;
+    letter-spacing: 10px;
+    margin-top: -905px;
+}
+
+/*.background-container {
+    margin: 0;
+    padding: 0;
+    background-image: url('patterns2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+
+/*.testt{
+        background-image: url(patterns2.png);
+        opacity: 0.7;
+        height: 100px;
+        background-size: contain;
+        position: absolute;
+        margin-top: -9px;
+        width:  500px;
+        margin-left: 92px;
+        margin-right: auto;
+    }*/
+/* .img2{
+        position: absolute;
+        height: auto;
+        margin-top: -1189px;
+        width: 1414px;
+        margin-left: 91px;
+        margin-right: 72px;
+        z-index: -1;
+        opacity: 0.4;
+      } */
