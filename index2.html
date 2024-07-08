@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <title>Herbes mauvais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantes</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body>
-        <input type="checkbox" id="check">
+    <div class="content">
+        <div class="container">
+            <div class="image-section">
+                <img   src="header.png" alt="image 1">
+            </div> 
+            <div class="text-section">
+                <div class="social-icons"> 
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <h1>Secrets <br>des Plantes</h1>
+                <p>un voyage au coeur des herbes</p>
+            </div>
+        </div>
+
+        <section class="herbes-intro">
+            <p>les "mauvaises herbes" sont des plantes non désirées qui poussent spontanément et souvent nuisibles dans
+                les jardins, les champs agricoles et d'autres environnements.</p>
+            <hr>
+        </section> 
+        <section class="herbe-item">
+            <img src="rot_mono.jpg" alt="Herbes monocotylédones" class="herbe-image">
+            <div class="herbe-description">
+                <h2>Herbes <span>monocotylédones</span></h2>
+                <p>Plante angiosperme dont la graine possède deux cotylédons, généralement égaux. embryon</p>
+                <p>[BIOLOGIE] Très jeune organisme animal ou végétal vivant… <a href="#">PLUS</a></p>
+            </div>
+        </section>
+
+        <section class="herbe-item">
+            <div class="herbe-description">
+                <h2>Herbes <span>dicotylédones</span></h2>
+                <p>Les "herbes dicotylédones" sont des plantes à fleurs qui possèdent deux cotylédons (feuilles
+                    embryonnaires) dans la graine. Ce groupe inclut une grande variété de plantes, notamment des herbes,
+                    des arbres et des arbustes à feuilles larges.</p>
+                <p>[BIOLOGIE] Très jeune organisme animal ou végétal vivant… <a href="#">PLUS</a></p>
+            </div>
+            <img src="photo3.jpg" alt="Herbes dicotylédones" class="herbe-image">
+        </section>
+        <section class="herbe-item">
+            <img src="photo2.jpg" alt="Herbes monocotylédones" class="herbe-image">
+            <div class="herbe-description">
+                <h2>Herbes <span>monocotylédones</span></h2>
+                <p>Plante angiosperme dont la graine possède deux cotylédons, généralement égaux. embryon</p>
+                <p>[BIOLOGIE] Très jeune organisme animal ou végétal vivant… <a href="#">PLUS</a></p>
+            </div>
+        </section>
+        <div class="center-container">
+            <div class="image-container">
+                <img src="photo2.jpg" alt="Image">
+                <hr class="overlay-hr">
+            </div>
+        </div>
+        <div class="navbar">
+        </div>
+    </div>
+
+    <input type="checkbox" id="check">
         <label for="check">
             <i class="fa-solid fa-bars" id="btn"></i>
             <i class="fa fa-times" id="cancel"></i>
@@ -18,21 +77,13 @@
             <header>MENU</header>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#"> Herbes monocotylédones</a></li>
-                <li><a href="#">Herbes dicotylédones</a></li>
+                <li><a href="#">  Monocotylédones</a></li>
+                <li><a href="#"> Dicotylédones</a></li>
                 <li><a href="">Adventices</a></li>
 
             </ul>
         </div>
-        <div class="fixed-background"></div>
-        <img src="Principal.jpg">
-        <div class="container">
-            <div class="titre-droite">
-                <h1> Les <br>mauvaises<br>herbes</h1>
-                <p>Votre assistant <br> au mauvais <br> herbes</p>
-            </div>
-        </div>
-        <p classe="para1" >Les mauvaises herbes sont des plantes indésirables <br>qui poussent spontanément dans des endroits où on ne les souhaite pas,<br> comme dans les jardins, les cultures, les pelouses, <br>et même entre les pavés des trottoirs.</p>
+
 </body>
 
 </html>
