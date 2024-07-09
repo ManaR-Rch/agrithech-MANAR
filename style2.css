@@ -1,11 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    width: 1200px;
+    position: relative;
+     width: 100%; 
+    box-sizing: border-box;
     padding: 0;
     color: #2F4F4F;
     background-color: #F5F5F5;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
+}
+html{
+    width: 100%;
 }
 *{
     text-decoration: none;
@@ -76,7 +81,7 @@ p {
     
 .herbes-intro {
         text-align: center;
-        padding: 20px;
+        padding: 20px; 
         font-size: 18px;
         font-family: 'kadwa', sans-serif;
         line-height: 1.5;
@@ -191,7 +196,10 @@ p {
     text-decoration: none;
     font-weight: bold;
 }
-.center-container {
+
+
+.image-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,15 +207,10 @@ p {
     height: 100%;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
 .image-container img {
     display: block;
-    width: auto; /* Adjust as needed */
-    max-width: 100%; /* Ensures image does not overflow the container */
+    width: 100%;  /* Adjust as needed */
+    /* max-width: 100%; Ensures image does not overflow the container */
     height: auto;
 }
 
@@ -312,3 +315,82 @@ label #cancel {
 #check:checked~.sidebar {
     left: 0;
 }
+
+.video-container {
+    justify-content:center ;
+    align-items: center;
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.video-container video{
+    padding: 50px;
+    height: auto;
+    width: 100%;
+
+}
+.gallery {
+    display: grid; /* respecte règles de la grille CSS*/
+    grid-template-columns: repeat(4, 1fr); /*créer une grille avec quatre colonnes 4 collone ,1fr (espace egal) */
+    gap: 20px; /* l'espacement entre les éléments de la grille. */
+    width:100% ;
+}
+
+.gallery img {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+}
+.suivi {
+    padding: 20px; 
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px 0 200px 0;
+    text-align: center;
+}
+.gallery p{
+    font-size: 25px;
+    font-family: 'kadwa', sans-serif;
+    letter-spacing:  4px;
+    line-height: 1.5;
+    color: #1a421b;
+   
+
+}
+footer {
+    position: absolute;
+    height: 80px;
+    width:100%;
+    background-color:#1a421b; 
+    color:#333;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    right: 0;
+}
+footer p {
+    margin: 0;
+
+}
+
+/* 
+.text-video {
+    justify-content:center ;
+    display: flex; 
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'kadwa', sans-serif;
+    line-height: 1.5;
+    color: #1a421b;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    letter-spacing:  4px;
+    margin: 20px 0;
+} */
